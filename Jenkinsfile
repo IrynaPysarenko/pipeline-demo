@@ -1,7 +1,7 @@
 pipeline {
     agent any
     libraries {
-        lib('library-demo@master')
+        lib('jenkins-pipeline-library@master')
     }
     stages {
         stage('Demo') {
