@@ -1,9 +1,12 @@
 pipeline {
     agent any
+    libraries {
+        lib('library-demo@master')
+    }
     stages {
         stage('Demo') {
             steps {
-                echo 'Hello'
+                hello 'sometext'
             }
         }
     }
